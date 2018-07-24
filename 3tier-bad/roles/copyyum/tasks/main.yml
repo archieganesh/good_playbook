@@ -1,0 +1,7 @@
+# Role to copy open_three-tier-app.repo
+---
+- name: Copy open_three-tier-app.repo to /etc/yum.repos.d in all the servers 
+  template:
+    src: open_three-tier-app.repo
+    dest: /etc/yum.repos.d/open_three-tier-app.repo
+    mode: 0644
